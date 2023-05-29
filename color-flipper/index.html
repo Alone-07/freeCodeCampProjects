@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+    <script src="./script.js" defer></script>
+    <style>
+      body {
+        min-height: 100vh;
+      }
+
+      button {
+        padding: 1rem 1.5rem;
+      }
+
+      #modeName,
+      #bgName {
+        border: 2px solid #000;
+        background-color: #fff;
+        color: #000;
+        padding: 0.25rem 2rem;
+        border-radius: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="heading">Color-Flipper</h1>
+    <div id="modes">
+      <button data-mode="simple">Simple</button>
+      <button data-mode="rgb">RGB</button>
+      <button data-mode="hex">HEX</button>
+    </div>
+    <div id="container">
+      <p>Current Mode: <span id="modeName">Simple</span></p>
+      <p>BackgroundColor: <span id="bgName">#fff</span></p>
+      <button type="button" id="randomBtn">get random</button>
+    </div>
+  </body>
+</html>
