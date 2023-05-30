@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+    <script src="./script.js" type="module" defer></script>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      img {
+        display: inline-block;
+        min-width: 100%;
+      }
+
+      .imgContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 300px;
+        height: 200px;
+        border: 5px solid #000;
+        margin-right: 1rem;
+      }
+
+      .card {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        padding: 0;
+      }
+
+      card > * {
+        width: 50%;
+      }
+
+      .txtContainer {
+        padding: 2rem;
+      }
+
+      .txtContainer > h3 {
+        display: flex;
+      }
+
+      .txtContainer > h3 > span {
+        margin-left: auto;
+      }
+
+      main {
+        width: min(850px, 90%);
+        padding: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Our Menu</h1>
+    <navbar id="navbar">
+      <button type="button" data-category="all">All</button>
+      <button type="button" data-category="breakfast">Breakfast</button>
+      <button type="button" data-category="lunch">Lunch</button>
+      <button type="button" data-category="shakes">Milkshake</button>
+      <button type="button" data-category="dinner">Dinner</button>
+    </navbar>
+    <main></main>
+  </body>
+</html>
